@@ -1,0 +1,14 @@
+.navbar {
+  margin-left: auto;
+  display: flex;
+
+  & > a {
+    color: white;
+    margin: 1rem;
+    font-size: 1rem;
+
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+}
