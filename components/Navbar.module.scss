@@ -1,14 +1,20 @@
+@use "variables";
+
 .navbar {
   margin-left: auto;
   display: flex;
-
   & > a {
     color: white;
-    margin: 1rem;
+    margin: 0.5rem;
     font-size: 1rem;
-
+    text-transform: uppercase;
+    font-weight: 800;
     &:hover {
       border-bottom: 1px solid white;
     }
   }
+}
+
+#appbar {
+  background-color: variables.$primaryBlue;
 }

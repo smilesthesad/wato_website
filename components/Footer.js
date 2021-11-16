@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from "./Footer.module.scss";
 export default function Footer() {
-  return <div>Created by WATonomous</div>;
+  return <div className={styles.footer}>Created by WATonomous</div>;
 }

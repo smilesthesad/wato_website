@@ -3,17 +3,24 @@
 }
 
 .description {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .head {
-  height: 40vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 50vh;
 }
 
-.info {
-  height: 60vh;
+.backOfBolty {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.infoGrid {
+  height: 50vh;
 }

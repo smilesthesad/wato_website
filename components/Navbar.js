@@ -5,7 +5,7 @@ import { AppBar, Toolbar, CssBaseline } from "@material-ui/core";
 
 export default function Navbar() {
   return (
-    <AppBar position="static">
+    <AppBar position="static" id={styles.appbar}>
       <CssBaseline />
       <Toolbar>
         <Link href="/">WATonomous Logo Here</Link>

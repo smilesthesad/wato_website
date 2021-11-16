@@ -1,9 +1,11 @@
 import Head from "next/head";
-import Link from "next/link";
+import Grid from "@mui/material/Grid";
 import BlueButton from "../components/BlueButton";
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.scss";
-
+import Image from "next/image";
+import backOfBolty from "../public/back_view_of_vehicle.jpg";
+import sideViewOfBolty from "../public/side_view_of_vehicle.jpeg";
 export default function Home() {
   return (
     <div>
@@ -25,16 +27,32 @@ export default function Home() {
               <BlueButton href="/about">Learn More</BlueButton>
               <BlueButton href="/">Become a Sponsor</BlueButton>
             </div>
+            <Image
+              src={backOfBolty}
+              className={styles.backOfBolty}
+              layout="fill"
+            />
           </div>
-          <div className={styles.info}>
-            <h1>Our Mission</h1>
-            <h2>Lorem Ipsum</h2>
-            <button className={styles.infoButton}>
-              <h1>Learn More</h1>
-            </button>
-            {/* image here */}
-            <h1>Partnerships</h1>
-            <h2>Merge between WATonomous and WATORACE</h2>
+          <div className={styles.infoGrid}>
+            <Grid container spacing={1}>
+              <Grid item xs={6}>
+                <h1>Our Mission</h1>
+                <h2>Lorem Ipsum</h2>
+                <BlueButton href="/about">Learn More</BlueButton>
+              </Grid>
+              <Grid item xs={6}>
+                <Image src={sideViewOfBolty} />
+              </Grid>
+              <Grid item xs={6}>
+                <h1>Partnerships</h1>
+                <h2>Merge between WATonomous and WATORACE</h2>
+              </Grid>
+              <Grid item xs={6}>
+                <h1>Partnerships</h1>
+                <h2>Merge between WATonomous and WATORACE</h2>
+              </Grid>
+              {/* image here */}
+            </Grid>
           </div>
         </main>
       </Layout>
