@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 import backOfBolty from "../public/back_view_of_vehicle.jpg";
 import sideViewOfBolty from "../public/side_view_of_vehicle.jpeg";
+
 export default function Home() {
   return (
     <div>
@@ -34,24 +35,51 @@ export default function Home() {
             />
           </div>
           <div className={styles.infoGrid}>
-            <Grid container spacing={1}>
-              <Grid item xs={6}>
-                <h1>Our Mission</h1>
-                <h2>Lorem Ipsum</h2>
+            <Grid
+              container
+              spacing={1}
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item md={6}>
+                <h1 className={styles.headerText}>Our Mission</h1>
+                <h2 className={styles.textDescription}>
+                  Adipisicing do et consequat fugiat qui sint dolor sint nostrud
+                  do consequat fugiat. Adipisicing sint occaecat tempor laboris
+                  amet mollit officia pariatur fugiat et amet qui veniam sunt.
+                  Eu quis quis incididunt veniam ad excepteur nisi veniam anim
+                  nostrud.
+                </h2>
                 <BlueButton href="/about">Learn More</BlueButton>
               </Grid>
-              <Grid item xs={6}>
-                <Image src={sideViewOfBolty} />
+              <Grid item md={6}>
+                <Image
+                  src={sideViewOfBolty}
+                  className={styles.sideViewOfBolty}
+                  width={300}
+                  height={200}
+                />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item md={6}>
                 <h1>Partnerships</h1>
                 <h2>Merge between WATonomous and WATORACE</h2>
               </Grid>
-              <Grid item xs={6}>
-                <h1>Partnerships</h1>
-                <h2>Merge between WATonomous and WATORACE</h2>
+              <Grid item md={6}>
+                <h1 className={styles.headerText}>Partnerships</h1>
+                <h2 className={styles.textDescription}>
+                  Excepteur dolor mollit fugiat mollit aliqua aute ut dolore
+                  occaecat aliqua labore dolore. Irure ut aliquip aliquip dolore
+                  labore et fugiat.Velit laborum voluptate reprehenderit
+                  consectetur.
+                </h2>
               </Grid>
-              {/* image here */}
+
+              <Image
+                src={backOfBolty}
+                className={styles.backOfBolty}
+                width={300}
+                height={200}
+              />
             </Grid>
           </div>
         </main>
