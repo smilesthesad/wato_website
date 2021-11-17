@@ -1,10 +1,11 @@
 @use "_variables";
 .main {
-  height: 100vh;
+  height: 180vh;
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .head {
@@ -13,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 100vh;
 }
 
 .headerText {
@@ -27,11 +28,15 @@
 }
 
 .sideViewOfBolty {
-  border-radius: 20px;
+  border-radius: 25px;
 }
+
 .infoGrid {
-  height: 40vh;
-  padding: 2rem 5rem;
+  height: 80vh;
+  margin: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .textDescription {

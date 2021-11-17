@@ -1,4 +1,12 @@
 .footer {
-  height: 20vh;
   min-height: 200px;
+  background-color: #2b3031;
+  & > * {
+    color: white;
+  }
+}
+
+.contact {
+  border-right: 5px solid white;
+  padding: 10px;
 }

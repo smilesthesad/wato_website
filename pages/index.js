@@ -37,9 +37,8 @@ export default function Home() {
           <div className={styles.infoGrid}>
             <Grid
               container
-              spacing={1}
-              alignItems="center"
-              justifyContent="center"
+              rowSpacing={{ xs: 2, sm: 3, md: 10 }}
+              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             >
               <Grid item md={6}>
                 <h1 className={styles.headerText}>Our Mission</h1>
@@ -52,34 +51,35 @@ export default function Home() {
                 </h2>
                 <BlueButton href="/about">Learn More</BlueButton>
               </Grid>
-              <Grid item md={6}>
+              <Grid item md={6} style={{ textAlign: "center" }}>
                 <Image
                   src={sideViewOfBolty}
                   className={styles.sideViewOfBolty}
-                  width={300}
-                  height={200}
+                  width={350}
+                  height={250}
                 />
               </Grid>
-              <Grid item md={6}>
-                <h1>Partnerships</h1>
-                <h2>Merge between WATonomous and WATORACE</h2>
+              <Grid item md={6} style={{ textAlign: "center" }}>
+                <div>
+                  <Image
+                    src={backOfBolty}
+                    className={styles.backOfBolty}
+                    width={350}
+                    height={250}
+                  />
+                </div>
               </Grid>
-              <Grid item md={6}>
-                <h1 className={styles.headerText}>Partnerships</h1>
-                <h2 className={styles.textDescription}>
-                  Excepteur dolor mollit fugiat mollit aliqua aute ut dolore
-                  occaecat aliqua labore dolore. Irure ut aliquip aliquip dolore
-                  labore et fugiat.Velit laborum voluptate reprehenderit
-                  consectetur.
-                </h2>
+              <Grid item md={6} style={{ textAlign: "right" }}>
+                <div>
+                  <h1 className={styles.headerText}>Partnerships</h1>
+                  <h2 className={styles.textDescription}>
+                    Excepteur dolor mollit fugiat mollit aliqua aute ut dolore
+                    occaecat aliqua labore dolore. Irure ut aliquip aliquip
+                    dolore labore et fugiat.Velit laborum voluptate
+                    reprehenderit consectetur.
+                  </h2>
+                </div>
               </Grid>
-
-              <Image
-                src={backOfBolty}
-                className={styles.backOfBolty}
-                width={300}
-                height={200}
-              />
             </Grid>
           </div>
         </main>
