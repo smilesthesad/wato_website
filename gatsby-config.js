@@ -4,8 +4,18 @@ module.exports = {
     title: "wato_web",
   },
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        sassOptions: {
+          includePaths: ["src/styles"],
+        },
+      },
+    },
     "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-provide-react`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -13,23 +23,22 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/src/pages/`,
       },
       __key: "pages",
     },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "images",
+    //     path: `${__dirname}/src/images/`,
+    //   },
+    //   __key: "images",
+    // },
   ],
 };
