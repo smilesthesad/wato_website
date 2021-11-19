@@ -1,40 +1,52 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import * as styles from "./Footer.module.scss";
+import SvgIcon from "@mui/material/SvgIcon";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+
 export default function Footer() {
-  // Switch to links
+  // TODO: Switch to links
   return (
     <div>
       <Grid
         className={styles.footer}
         container
-        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        alignItems="center"
+        columnSpacing={{ xs: 1, sm: 2, md: 2 }}
+        justifyContent="center"
       >
-        <Grid item md={3} className={styles.contact}>
+        <Grid
+          item
+          xs={1}
+          md={2}
+          className={styles.contact}
+          justifyContent="center"
+        >
           <h1>Contact Us</h1>
-          <h2>info@watonomous.ca</h2>
-          <h2>200 University, University of Waterloo, ON</h2>
+          <h3>info@watonomous.ca</h3>
+          <h3>200 University, University of Waterloo, ON</h3>
           {/* media buttons here */}
+          {/* <SvgIcon>{TwitterIcon}</SvgIcon> */}
         </Grid>
-        <Grid item md={3}>
+        <Grid item xs={1} md={3}>
           <h1>Sponsors</h1>
           <h1>About us</h1>
-          <h2>Major Accomplishments</h2>
-          <h2>Timeline</h2>
+          <h3>Major Accomplishments</h3>
+          <h3>Timeline</h3>
         </Grid>
-        <Grid item md={3}>
+        <Grid item xs={1} md={3}>
           <h1>Team</h1>
-          <h2>Team Structure</h2>
-          <h2>200 University, University of Waterloo, ON</h2>
-          <h2>Resources</h2>
-          <h2>Apply</h2>
+          <h3>Team Structure</h3>
+          <h3>Role Details</h3>
+          <h3>Resources</h3>
+          <h3>Apply</h3>
         </Grid>
-        <Grid item md={3}>
+        <Grid item xs={1} md={3}>
           <h1>Media</h1>
-          <h2>Photo Gallery</h2>
-          <h2>News Coverage</h2>
-          <h2>Tech Talks</h2>
+          <h3>Photo Gallery</h3>
+          <h3>News Coverage</h3>
+          <h3>Tech Talks</h3>
         </Grid>
       </Grid>
       Created by WATonomous

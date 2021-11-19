@@ -60,7 +60,6 @@ export default function Home() {
                 <div>
                   <StaticImage
                     src="../images/WATORACE_LOGO.svg"
-                    // className={styles.backOfBolty}
                     height={200}
                   />
                 </div>
