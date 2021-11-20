@@ -22,7 +22,7 @@ export default function Home() {
               src="../images/back_view_of_vehicle.jpg"
               className={styles.backOfBolty}
             />
-            <StaticImage src="../images/WATOLogo.svg" width={1200} />
+            <StaticImage src="../images/WATOLogo.webp" width={1200} />
             <h1 className={styles.description}>
               University of Waterloo's Autonomous Vehicle Design Team
             </h1>
