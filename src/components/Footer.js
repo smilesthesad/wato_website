@@ -16,31 +16,38 @@ export default function Footer() {
         columnSpacing={{ xs: 1, sm: 2, md: 2 }}
         justifyContent="center"
       >
-        <Grid item md={2} className={styles.contact} justifyContent="center">
+        <Grid item xs={12} sm={5} md={3} className={styles.contact}>
           <h1>Contact Us</h1>
           <h3>info@watonomous.ca</h3>
           <h3>200 University, University of Waterloo, ON</h3>
-          {/* media buttons here */}
           <a href="www.google.com" className={styles.icon}>
             <SvgIcon component={TwitterIcon} color="action" />
-            <SvgIcon component={InstagramIcon} color="action" />
+          </a>
+          <a href="www.google.com" className={styles.icon}>
+            <SvgIcon
+              component={InstagramIcon}
+              color="action"
+              href="www.google.com"
+            />
+          </a>
+          <a href="www.google.com" className={styles.icon}>
             <SvgIcon component={FacebookIcon} color="action" />
           </a>
         </Grid>
-        <Grid item xs={2} md={3}>
+        <Grid item xs={12} sm={5} md={3}>
           <h1>Sponsors</h1>
           <h1>About us</h1>
           <h3>Major Accomplishments</h3>
           <h3>Timeline</h3>
         </Grid>
-        <Grid item xs={2} md={3}>
+        <Grid item xs={12} sm={5} md={3}>
           <h1>Team</h1>
           <h3>Team Structure</h3>
           <h3>Role Details</h3>
           <h3>Resources</h3>
           <h3>Apply</h3>
         </Grid>
-        <Grid item xs={2} md={3}>
+        <Grid item xs={12} sm={5} md={3}>
           <h1>Media</h1>
           <h3>Photo Gallery</h3>
           <h3>News Coverage</h3>
