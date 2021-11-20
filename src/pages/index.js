@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Helmet>
-        <title>WATonomous Website</title>
+        <title>WATonomous</title>
         <meta
           name="keywords"
           content="watonomous, autonomous vehicles, vehicles, autonomy, waterloo, student design team"
@@ -26,7 +26,7 @@ export default function Home() {
             <h1 className={styles.description}>
               University of Waterloo's Autonomous Vehicle Design Team
             </h1>
-            <div>
+            <div className={styles.infoButtons}>
               <BlueButton href="/about">Learn More</BlueButton>
               <BlueButton href="/">Become a Sponsor</BlueButton>
             </div>
@@ -57,12 +57,23 @@ export default function Home() {
                 />
               </Grid>
               <Grid item md={6} style={{ textAlign: "center" }}>
-                <div>
-                  <StaticImage
-                    src="../images/WATORACE_LOGO.svg"
-                    height={200}
-                  />
-                </div>
+                <Grid container className={styles.watoPictures}>
+                  <Grid md={6}>
+                    <StaticImage
+                      src="../images/WATORACE_LOGO.svg"
+                      height={200}
+                    />
+                  </Grid>
+                  <Grid item md={6}>
+                    <StaticImage src="../images/iaccar.jpg" width={400} />
+                  </Grid>
+                  <Grid md={6}>
+                    <StaticImage src="../images/mprwlogo.png" height={200} />
+                  </Grid>
+                  <Grid md={6}>
+                    <StaticImage src="../images/mprwcar.jpg" height={200} />
+                  </Grid>
+                </Grid>
               </Grid>
               <Grid item md={6} style={{ textAlign: "right" }}>
                 <div>
