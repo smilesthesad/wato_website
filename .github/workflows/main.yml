@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run develop mode
-        run: npm run develop
+        run: npm ci && npm run develop
