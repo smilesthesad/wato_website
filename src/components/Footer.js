@@ -20,19 +20,27 @@ export default function Footer() {
           <h1>Contact Us</h1>
           <h3>info@watonomous.ca</h3>
           <h3>200 University, University of Waterloo, ON</h3>
-          <a href="www.google.com" className={styles.icon}>
-            <SvgIcon component={TwitterIcon} color="action" />
-          </a>
-          <a href="www.google.com" className={styles.icon}>
-            <SvgIcon
-              component={InstagramIcon}
-              color="action"
-              href="www.google.com"
-            />
-          </a>
-          <a href="www.google.com" className={styles.icon}>
-            <SvgIcon component={FacebookIcon} color="action" />
-          </a>
+          <Grid
+            container
+            justifyContent="flex-start"
+            alignItems="center"
+          >
+            <Grid item>
+              <a href="https://twitter.com/watonomous/" className={styles.icon}>
+                <SvgIcon component={TwitterIcon} color="action" />
+              </a>
+            </Grid>
+            <Grid item>
+              <a href="https://www.instagram.com/watonomous/" className={styles.icon}>
+                <SvgIcon component={InstagramIcon} color="action" />
+              </a>
+            </Grid>
+            <Grid item>
+              <a href="https://www.facebook.com/WATonomous/" className={styles.icon}>
+                <SvgIcon component={FacebookIcon} color="action" />
+              </a>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item xs={12} sm={5} md={3}>
           <h1>Sponsors</h1>
