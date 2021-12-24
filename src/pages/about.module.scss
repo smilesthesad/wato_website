@@ -1,0 +1,6 @@
+.aboutButtons {
+  margin: 3vh 0;
+  & > a:not(:first-of-type) {
+    margin: 1vw;
+  }
+}

@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import React from "react";
 import BlueButton from "../components/BlueButton";
 import Layout from "../components/Layout";
-import * as styles from "./Home.module.scss";
+import * as styles from "./index.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         ></meta>
       </Helmet>
       <Layout>
-        <main className={styles.main}>
+        <main>
           <div className={styles.head}>
             <StaticImage
               src="../images/back_view_of_vehicle.jpg"
