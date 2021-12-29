@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import * as styles from "./index.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
+
 export default function Home() {
   return (
     <div>
@@ -15,12 +16,12 @@ export default function Home() {
           content="watonomous, autonomous vehicles, vehicles, autonomy, waterloo, student design team"
         ></meta>
       </Helmet>
-      <Layout>
+      <Layout customLayout={true}>
         <main>
           <div className={styles.head}>
             <StaticImage
               src="../images/back_view_of_vehicle.jpg"
-              className={styles.backOfBolty}
+              className={styles.backgroundBolty}
             />
             <StaticImage src="../images/WATOLogo.webp" width={1200} />
             <h1 className={styles.description}>
@@ -46,6 +47,7 @@ export default function Home() {
                   Eu quis quis incididunt veniam ad excepteur nisi veniam anim
                   nostrud.
                 </h2>
+
                 <BlueButton href="/about">Learn More</BlueButton>
               </Grid>
               <Grid item md={6} style={{ textAlign: "center" }}>
@@ -53,7 +55,6 @@ export default function Home() {
                   src="../images/side_view_of_vehicle.jpeg"
                   className={styles.sideViewOfBolty}
                   width={350}
-                  // height={250}
                 />
               </Grid>
               <Grid item md={6} style={{ textAlign: "center" }}>
@@ -61,17 +62,30 @@ export default function Home() {
                   <Grid md={6}>
                     <StaticImage
                       src="../images/WATORACE_LOGO.svg"
+                      className={styles.infoGridPic}
                       height={200}
                     />
                   </Grid>
                   <Grid item md={6}>
-                    <StaticImage src="../images/iaccar.jpg" width={400} />
+                    <StaticImage
+                      src="../images/iaccar.jpg"
+                      className={styles.infoGridPic}
+                      width={400}
+                    />
                   </Grid>
                   <Grid md={6}>
-                    <StaticImage src="../images/mprwlogo.png" height={200} />
+                    <StaticImage
+                      src="../images/mprwlogo.png"
+                      className={styles.infoGridPic}
+                      height={200}
+                    />
                   </Grid>
                   <Grid md={6}>
-                    <StaticImage src="../images/mprwcar.jpg" height={200} />
+                    <StaticImage
+                      src="../images/mprwcar.jpg"
+                      className={styles.infoGridPic}
+                      width={400}
+                    />
                   </Grid>
                 </Grid>
               </Grid>

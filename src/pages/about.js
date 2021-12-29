@@ -5,7 +5,7 @@ import * as styles from "./about.module.scss";
 export default function About() {
   return (
     <Layout>
-      <div className="teamDesc">
+      <div className={styles.teamDesc}>
         <h1>Our Team</h1>
         <h3>
           WATonomous is the University of Waterloo's first student-run
@@ -17,8 +17,8 @@ export default function About() {
           <BlueButton>Apply now!</BlueButton>
           <BlueButton>Resources</BlueButton>
         </div>
-        <h1> Directors</h1>
         {/* <Division name="Software" desc="Dolor sunt pariatur ea ad esse commodo."> */}
+        <h1> Directors</h1>
         <h1>Software Division</h1>
         <h1>Mechanical Division</h1>
         <h1>Electrical Division</h1>

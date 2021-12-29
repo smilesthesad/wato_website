@@ -6,6 +6,7 @@
 }
 
 .head {
+  margin: 0 !important;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -18,7 +19,7 @@
   color: variables.$primaryBlue;
 }
 
-.backOfBolty {
+.backgroundBolty {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -32,7 +33,6 @@
 }
 
 .infoGrid {
-  height: 100%;
   margin: 0 4em;
   padding: 2vw 0;
   display: flex;
@@ -51,4 +51,10 @@
 
 .watoPictures {
   display: flex;
+  align-items: center;
+}
+
+.infoGridPic {
+  margin: 10px;
+  border-radius: 10px;
 }
