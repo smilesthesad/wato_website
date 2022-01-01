@@ -102,6 +102,14 @@ export default function Home() {
               </Grid>
             </Grid>
           </div>
+          <div className={styles.researchPapers}>
+            <h1>Research Papers</h1>
+            <p>
+              We are currently in the process of developing multiple research
+              projects. They are all ongoing and will be ready by early fall.
+              Check out the topics here!
+            </p>
+          </div>
         </main>
       </Layout>
     </div>

@@ -1,0 +1,6 @@
+@use "variables";
+
+.boldBlue {
+  font-weight: 700;
+  color: variables.$primaryBlue;
+}
