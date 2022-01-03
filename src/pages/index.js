@@ -5,7 +5,8 @@ import Layout from "../components/Layout";
 import * as styles from "./index.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
-
+import ResearchProject from "../components/ResearchProject";
+import BackViewofVehicle from "../images/back_view_of_vehicle.jpg";
 export default function Home() {
   return (
     <div>
@@ -103,12 +104,50 @@ export default function Home() {
             </Grid>
           </div>
           <div className={styles.researchPapers}>
-            <h1>Research Papers</h1>
-            <p>
-              We are currently in the process of developing multiple research
-              projects. They are all ongoing and will be ready by early fall.
-              Check out the topics here!
-            </p>
+            <div>
+              <h1>Research Papers</h1>
+              <p>
+                We are currently in the process of developing multiple research
+                projects. They are all ongoing and will be ready by early fall.
+                Check out the topics here!
+              </p>
+            </div>
+
+            <Grid
+              container
+              rowSpacing={1}
+              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+              justifyContent="center"
+            >
+              <Grid md={2.5}>
+                <ResearchProject
+                  title="Environment Modeling"
+                  text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
+                  image={BackViewofVehicle}
+                ></ResearchProject>
+              </Grid>
+              <Grid md={2.5}>
+                <ResearchProject
+                  title="Environment Modeling"
+                  text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
+                  image={BackViewofVehicle}
+                ></ResearchProject>
+              </Grid>
+              <Grid md={2.5}>
+                <ResearchProject
+                  title="Environment Modeling"
+                  text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
+                  image={BackViewofVehicle}
+                ></ResearchProject>
+              </Grid>
+              <Grid md={2.5}>
+                <ResearchProject
+                  title="Environment Modeling"
+                  text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
+                  image={BackViewofVehicle}
+                ></ResearchProject>
+              </Grid>
+            </Grid>
           </div>
         </main>
       </Layout>
