@@ -119,28 +119,28 @@ export default function Home() {
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
               justifyContent="center"
             >
-              <Grid md={2.5}>
+              <Grid md={2.8}>
                 <ResearchProject
                   title="Environment Modeling"
                   text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
                   image={BackViewofVehicle}
                 ></ResearchProject>
               </Grid>
-              <Grid md={2.5}>
+              <Grid md={2.8}>
                 <ResearchProject
                   title="Environment Modeling"
                   text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
                   image={BackViewofVehicle}
                 ></ResearchProject>
               </Grid>
-              <Grid md={2.5}>
+              <Grid md={2.8}>
                 <ResearchProject
                   title="Environment Modeling"
                   text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
                   image={BackViewofVehicle}
                 ></ResearchProject>
               </Grid>
-              <Grid md={2.5}>
+              <Grid md={2.8}>
                 <ResearchProject
                   title="Environment Modeling"
                   text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."

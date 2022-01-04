@@ -1,0 +1,22 @@
+@use "variables";
+.blueHeading {
+  background-color: variables.$lightBlue;
+  padding: 1vh 3vw;
+  font-weight: 600;
+}
+
+.sponsorHeader {
+  padding: 1vh 3vw;
+}
+
+.teamBolty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
