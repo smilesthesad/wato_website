@@ -12,7 +12,12 @@ export default function ResearchProject(props) {
             className={styles.cardImage}
           />
         </CardMedia>
-        <CardContent>
+        <CardContent
+          style={{
+            backgroundColor: "white",
+            borderRadius: "0 0 10px 10px",
+          }}
+        >
           <h1>{props.title}</h1>
           <p>{props.text}</p>
         </CardContent>

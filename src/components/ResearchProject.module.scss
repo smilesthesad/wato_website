@@ -1,7 +1,6 @@
 .cardActionArea {
   text-align: center;
-  padding-left: 1vw;
-  background-color: white;
+  margin-left: 1vw;
 }
 
 .cardImage {
@@ -9,5 +8,5 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
+  border-radius: 10px 10px 0 0;
 }

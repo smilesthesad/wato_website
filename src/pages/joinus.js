@@ -57,6 +57,12 @@ export default function joinus() {
           Marketing - Victor Zheng: v2zheng@watonomous.ca <br />
           Graphic Design - Roni Wu:yy8wu@watonomous.ca
         </p>
+        <h1>Applications for Affiliated Clubs</h1>
+        <h1 className="boldBlue">WATORACE</h1>
+        <p>
+          External Application:{" "}
+          <a href="https://watorace.ca/apply"> Click Here! </a>
+        </p>
       </div>
     </Layout>
   );

@@ -18,7 +18,7 @@ export default function Sponsors() {
           </p>
         </div>
         <h2 className={styles.blueHeading}>Why WATO?</h2>
-        <div className={styles.teamBolty}>
+        <div className={styles.centerImage}>
           <StaticImage src="../images/team_with_bolty.png" width={700} />
         </div>
         <p>
@@ -31,10 +31,23 @@ export default function Sponsors() {
         </p>
         <div className={`${styles.blueHeading} ${styles.joinUs}`}>
           <h1>Join Us Today!</h1>
-          <div className={styles.completeSponsor}>
+          <div className={styles.sponsorHeader}>
             <BlueButton>Complete Sponsor Form</BlueButton>
           </div>
         </div>
+        <p>
+          For more details, our sponsorship package can be accessed here. For
+          any inquirires, feel free to contact us.
+        </p>
+        <div className={styles.centerImage}>
+          <StaticImage src="../images/sponsorpackage.png" width={700} />
+        </div>
+        <h2 className={styles.blueHeading}>Our Current Sponsors</h2>
+        <p style={{ textAlign: "center" }}>
+          A huge thank you to everyone who supports our design team and our
+          mission!
+        </p>
+        <h3>Current Partner</h3>
       </div>
     </Layout>
   );

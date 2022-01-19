@@ -55,7 +55,7 @@ export default function Home() {
                 <StaticImage
                   src="../images/side_view_of_vehicle.jpeg"
                   className={styles.sideViewOfBolty}
-                  width={350}
+                  width={600}
                 />
               </Grid>
               <Grid item md={6} style={{ textAlign: "center" }}>
