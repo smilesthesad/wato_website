@@ -16,7 +16,9 @@
 }
 
 .headerText {
+  font-size: 3vw;
   color: variables.$primaryBlue;
+  font-family: 'Montserrat', 900;
 }
 
 .backgroundBolty {
@@ -41,7 +43,7 @@
 }
 
 .textDescription {
-  font-size: 1rem;
+  font-weight: 400;
   padding: 1rem 1rem 2rem 0;
 }
 

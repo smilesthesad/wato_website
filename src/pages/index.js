@@ -1,5 +1,6 @@
 import Grid from "@mui/material/Grid";
 import React from "react";
+import "../styles/custom.scss"
 import BlueButton from "../components/BlueButton";
 import Layout from "../components/Layout";
 import * as styles from "./index.module.scss";
@@ -41,7 +42,7 @@ export default function Home() {
             >
               <Grid item md={6}>
                 <h1 className={styles.headerText}>Our Mission</h1>
-                <h2 className={styles.textDescription}>
+                <h2 className={`${styles.textDescription}`}>
                   Adipisicing do et consequat fugiat qui sint dolor sint nostrud
                   do consequat fugiat. Adipisicing sint occaecat tempor laboris
                   amet mollit officia pariatur fugiat et amet qui veniam sunt.
@@ -92,7 +93,7 @@ export default function Home() {
               </Grid>
               <Grid item md={6} style={{ textAlign: "right" }}>
                 <div>
-                  <h1 className={styles.headerText}>Partnerships</h1>
+                  <h1 className={styles.headerText}><b>Partnerships</b></h1>
                   <h2 className={styles.textDescription}>
                     Excepteur dolor mollit fugiat mollit aliqua aute ut dolore
                     occaecat aliqua labore dolore. Irure ut aliquip aliquip
