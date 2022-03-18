@@ -1,0 +1,10 @@
+@use "variables";
+
+.greyButton {
+  font-size: 1.5rem;
+  border-radius: 3px;
+  background-color: variables.$darkGrey;
+  padding: 1rem 1.3rem;
+  color: white;
+  text-decoration: none;
+}

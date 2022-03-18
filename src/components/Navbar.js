@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link to="/events">Events</Link>
           <Link to="/getinvolved">Get Involved</Link>
           <Link to="/newsroom">Newsroom</Link>
-          <Link to="/" id={styles.contact}>
+          <Link to="/contactus" id={styles.contact}>
             Contact Us
           </Link>
         </div>
