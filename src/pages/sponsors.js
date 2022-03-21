@@ -42,12 +42,50 @@ export default function Sponsors() {
         <div className={styles.centerImage}>
           <StaticImage src="../images/sponsorpackage.png" width={700} />
         </div>
-        <h2 className={styles.blueHeading}>Our Current Sponsors</h2>
-        <p style={{ textAlign: "center" }}>
-          A huge thank you to everyone who supports our design team and our
-          mission!
-        </p>
-        <h3>Current Partner</h3>
+        <div className={styles.sponsors}>
+          <h2 className={styles.blueHeading}>Our Current Sponsors</h2>
+          <p style={{ textAlign: "center" }}>
+            A huge thank you to everyone who supports our design team and our
+            mission!
+          </p>
+          <h3 style={{ textAlign: "center" }}>Current Partners</h3>
+          <div className={styles.tier}>
+          <StaticImage src="../images/logo_gm.png" width={300} />
+          </div>
+          <h3>Current Sponsors</h3>
+          <h4>Diamond Tier</h4>
+          <div className={styles.tier}>
+          <StaticImage src="../images/logo_mef.png" width={300} />
+          <StaticImage src="../images/logo_lumentum.png" width={300} />
+          </div>
+          {/* Lumentum, MEF */}
+          <h4>Platinum Tier</h4>
+          <div className={styles.tier}>
+          {/* Applanix is now part of Trimble */}
+          <StaticImage src="../images/logo_trimble.png" width={300} />
+          </div>
+          <h4>Gold Tier</h4>
+          <div className={styles.tier}>
+          {/* Vector, WEEF */}
+          <StaticImage src="../images/logo_weef.png" width={300} />
+          </div>
+          <h4>Silver Tier</h4>
+          <div className={styles.tier}>
+          {/* MSD Machine Tool */}
+          </div>
+          <h4>Bronze Tier</h4>
+          <div className={styles.tier}>
+          <StaticImage src="../images/logo_engsoc.png" width={300} />
+          {/* waterloo engineering */}
+          </div>
+          <h4>In-Kind Sponsors</h4>
+          <div className={styles.tier}>
+          <StaticImage src="../images/logo_1password.png" width={300} />
+          <StaticImage src="../images/logo_teleport.webp" width={300} />
+
+          </div>
+          {/* 1Password, Teleport */}
+        </div>
       </div>
     </Layout>
   );

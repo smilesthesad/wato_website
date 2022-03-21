@@ -20,3 +20,25 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.tier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+
+}
+
+.tier img {
+  padding-left: 30px;
+}
+.sponsors h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.sponsors h4 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+

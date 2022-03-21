@@ -96,6 +96,7 @@ export default function contactus() {
         <Grid item xs={7}>
           <iframe
             src={WATOlocation.embedURL}
+            title="WATonomous Location"
             width="100%"
             height={WATOlocation.height}
             loading="lazy"
