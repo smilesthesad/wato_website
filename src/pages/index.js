@@ -1,6 +1,5 @@
-import Grid from "@mui/material/Grid";
+import { Grid, Typography } from "@mui/material";
 import React from "react";
-import "../styles/custom.scss"
 import BlueButton from "../components/BlueButton";
 import Layout from "../components/Layout";
 import * as styles from "./index.module.scss";
@@ -41,14 +40,18 @@ export default function Home() {
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             >
               <Grid item md={6}>
-                <h1 className={styles.headerText}>Our Mission</h1>
-                <h2 className={`${styles.textDescription}`}>
-                  Adipisicing do et consequat fugiat qui sint dolor sint nostrud
+                <Typography variant="h2" className={styles.headerText}>
+                  <b>
+                    Our Mission
+                    </b>
+                </Typography>
+                <Typography variant="h6" className={styles.textDescription}>
+                Adipisicing do et consequat fugiat qui sint dolor sint nostrud
                   do consequat fugiat. Adipisicing sint occaecat tempor laboris
                   amet mollit officia pariatur fugiat et amet qui veniam sunt.
                   Eu quis quis incididunt veniam ad excepteur nisi veniam anim
                   nostrud.
-                </h2>
+                </Typography>
 
                 <BlueButton href="/about">Learn More</BlueButton>
               </Grid>
@@ -93,12 +96,17 @@ export default function Home() {
               </Grid>
               <Grid item md={6} style={{ textAlign: "right" }}>
                 <div>
-                  <h1 className={styles.headerText}><b>Partnerships</b></h1>
-                  <h2 className={styles.textDescription}>
-                    Excepteur dolor mollit fugiat mollit aliqua aute ut dolore
+                  <Typography variant="h2" className={styles.headerText}>
+                  <b>Partnerships</b>
+                  </Typography>
+                  <Typography variant="h6" className={styles.textDescription}>
+                  Excepteur dolor mollit fugiat mollit aliqua aute ut dolore
                     occaecat aliqua labore dolore. Irure ut aliquip aliquip
                     dolore labore et fugiat.Velit laborum voluptate
                     reprehenderit consectetur.
+                </Typography>
+                  <h2 className={styles.textDescription}>
+                   
                   </h2>
                 </div>
               </Grid>
@@ -106,12 +114,16 @@ export default function Home() {
           </div>
           <div className={styles.researchPapers}>
             <div>
-              <h1>Research Papers</h1>
-              <p>
+              <Typography variant="h2">
+                <b>
+                Research Papers
+                </b>
+              </Typography>
+              <Typography variant="h6" style={{"marginBottom": "2vw"}}>
                 We are currently in the process of developing multiple research
                 projects. They are all ongoing and will be ready by early fall.
                 Check out the topics here!
-              </p>
+              </Typography>
             </div>
 
             <Grid

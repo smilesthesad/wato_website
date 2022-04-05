@@ -1,4 +1,5 @@
 import { StaticImage } from "gatsby-plugin-image";
+import { Typography } from "@mui/material";
 import React from "react";
 import BlueButton from "../components/BlueButton";
 import Layout from "../components/Layout";
@@ -8,83 +9,112 @@ export default function Sponsors() {
     <Layout customLayout={true}>
       <div>
         <div className={styles.sponsorHeader}>
-          <h1>Sponsors</h1>
-          <p>
-            Autonomous vehicles are the future. WATonomous is passionate about
+          <Typography variant="h2">
+            <b>
+            Sponsors
+            </b>
+          </Typography>
+          <Typography variant="h6">
+          Autonomous vehicles are the future. WATonomous is passionate about
             their work in achieving this vision. As WATonomous grows, it
             requires a significant investment into software and hardware. With
             your support, we can heighten our vehicle’s performance and gain
             access to more competition opportunities.
-          </p>
+          </Typography>
         </div>
-        <h2 className={styles.blueHeading}>Why WATO?</h2>
+        <Typography variant="h4" className={styles.blueHeading}>
+          <b>
+            Why WATO?
+          </b>
+        </Typography>
         <div className={styles.centerImage}>
           <StaticImage src="../images/team_with_bolty.png" width={700} />
         </div>
-        <p>
+        <Typography variant="h6">
           We are a team of bright individuals with outstanding competition
           results to show for it (list results).
-        </p>
-        <p>
+        </Typography>
+        <Typography variant="h6">
           We are expanding our horizons, currently in works of publishing
           multiple research reports and Tech Talks.
-        </p>
+        </Typography>
         <div className={`${styles.blueHeading} ${styles.joinUs}`}>
-          <h1>Join Us Today!</h1>
+          <Typography variant="h4">
+            <b>Join Us Today!</b>
+          </Typography>
           <div className={styles.sponsorHeader}>
             <BlueButton>Complete Sponsor Form</BlueButton>
           </div>
         </div>
-        <p>
+        <Typography variant="h6">
           For more details, our sponsorship package can be accessed here. For
           any inquirires, feel free to contact us.
-        </p>
+        </Typography>
         <div className={styles.centerImage}>
           <StaticImage src="../images/sponsorpackage.png" width={700} />
         </div>
         <div className={styles.sponsors}>
-          <h2 className={styles.blueHeading}>Our Current Sponsors</h2>
-          <p style={{ textAlign: "center" }}>
+        <div className={styles.blueHeading}>
+          <Typography variant="h4">
+            <b>Our Current Sponsors</b>
+          </Typography>
+        </div>
+          <Typography variant="h6" style={{ textAlign: "center" }}>
             A huge thank you to everyone who supports our design team and our
-            mission!
-          </p>
-          <h3 style={{ textAlign: "center" }}>Current Partners</h3>
-          <div className={styles.tier}>
+            mission
+          </Typography>
+          <Typography variant="h4" className={styles.tier}>
+          <b>Current Partners</b>
+          </Typography>
+          <div className={styles.sponsorLogo}>
           <StaticImage src="../images/logo_gm.png" width={300} />
           </div>
-          <h3>Current Sponsors</h3>
-          <h4>Diamond Tier</h4>
-          <div className={styles.tier}>
+          <Typography variant="h4" className={styles.tier}>
+          <b>Current Sponsors</b>
+          </Typography>
+          <Typography variant="h5" className={styles.tier}>
+          Diamond Tier
+          </Typography>
+          <div className={styles.sponsorLogo}>
           <StaticImage src="../images/logo_mef.png" width={300} />
           <StaticImage src="../images/logo_lumentum.png" width={300} />
           </div>
           {/* Lumentum, MEF */}
-          <h4>Platinum Tier</h4>
-          <div className={styles.tier}>
+          <Typography variant="h5" className={styles.tier}>
+          Platinum Tier
+          </Typography>
+          <div className={styles.sponsorLogo}>
           {/* Applanix is now part of Trimble */}
           <StaticImage src="../images/logo_trimble.png" width={300} />
           </div>
-          <h4>Gold Tier</h4>
-          <div className={styles.tier}>
+          <Typography variant="h5" className={styles.tier}>
+          Gold Tier
+          </Typography>
+          <div className={styles.sponsorLogo}>
           {/* Vector, WEEF */}
           <StaticImage src="../images/logo_weef.png" width={300} />
           </div>
-          <h4>Silver Tier</h4>
-          <div className={styles.tier}>
+          <Typography variant="h5" className={styles.tier}>
+          Silver Tier
+          </Typography>
+          <div className={styles.sponsorLogo}>
           {/* MSD Machine Tool */}
           </div>
-          <h4>Bronze Tier</h4>
-          <div className={styles.tier}>
+          <Typography variant="h5" className={styles.tier}>
+          Bronze Tier
+          </Typography>
+          <div className={styles.sponsorLogo}>
           <StaticImage src="../images/logo_engsoc.png" width={300} />
           {/* waterloo engineering */}
           </div>
-          <h4>In-Kind Sponsors</h4>
-          <div className={styles.tier}>
+          <Typography variant="h5" className={styles.tier}>
+          In-Kind Sponsors
+          </Typography>
+          <div className={styles.sponsorLogo} style={{"paddingBottom": "2vw"}}>
           <StaticImage src="../images/logo_1password.png" width={300} />
           <StaticImage src="../images/logo_teleport.webp" width={300} />
-
-          </div>
           {/* 1Password, Teleport */}
+          </div>
         </div>
       </div>
     </Layout>

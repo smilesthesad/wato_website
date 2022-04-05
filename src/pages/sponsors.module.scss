@@ -1,8 +1,12 @@
 @use "variables";
+
 .blueHeading {
   background-color: variables.$lightBlue;
-  padding: 1vh 3vw;
-  font-weight: 600;
+  padding: 1.5vw 6vw;
+}
+
+.tier {
+  padding: 1.5vw 6vw;
 }
 
 .sponsorHeader {
@@ -21,7 +25,7 @@
   align-items: center;
 }
 
-.tier {
+.sponsorLogo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,13 +36,3 @@
 .tier img {
   padding-left: 30px;
 }
-.sponsors h3 {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.sponsors h4 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-

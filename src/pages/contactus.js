@@ -1,10 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
+import {Typography, Stack, Grid} from "@mui/material"
 import ContactInfo from "../components/ContactInfo";
-import Grid from "@mui/material/Grid";
 import Form from "../components/Form";
 import GreyButton from "../components/GreyButton";
-import { Stack } from "@mui/material";
 import * as style from "./contactus.module.scss";
 
 
@@ -21,15 +20,15 @@ export default function contactus() {
     <Layout>
       <Grid container spacing={2} direction="row">
         <Grid item xs={12}>
-          <h1>Contact Us!</h1>
+          <Typography variant="h2"><b>Contact Us!</b></Typography>
         </Grid>
 
         <Grid item xs={12}>
-          <p>
+          <Typography variant="h6">
             Feel free to reach out to us on any of these platforms! You can contact
             us at info@watonomous.ca or simply fill out the form below with your
             message.
-          </p>
+          </Typography>
         </Grid>
 
         <Grid item xs={4}>
@@ -71,7 +70,7 @@ export default function contactus() {
 
         <Grid item xs={4}>
           <p>
-            Join our mailing list to receive updates about upcoming events, opportunities, and news about WATOnomous!
+            Join our mailing list to receive updates about upcoming events, opportunities, and news about WATonomous!
           </p>
         </Grid>
         <Grid item xs={8}>
@@ -90,7 +89,7 @@ export default function contactus() {
         </Grid>
 
         <Grid item xs={12}>
-          <p>WATOnomous is a University of Waterloo student-run autonomous car team and is located at the Engineering 5 building in the Sedra design centre.</p>
+          <p>WATonomous is a University of Waterloo student-run autonomous car team and is located at the Engineering 5 building in the Sedra design centre.</p>
         </Grid>
         
         <Grid item xs={7}>
@@ -103,19 +102,16 @@ export default function contactus() {
           />
         </Grid>
         <Grid item xs={5}>
-          <p>
+          <Typography variant="h6">
             University of Waterloo<br/>
             Engineering 5<br/>
             200 University Ave W<br/>
             Waterloo, ON<br/>
             N2L 3G1 Canada<br/>
-          </p>
+          </Typography>
         </Grid>
       </Grid>
-
       <br/>
-
-
     </Layout>
   );
 }
