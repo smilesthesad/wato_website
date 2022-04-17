@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import { Link } from "gatsby"
 import * as styles from "./joinus.module.scss"
 import React from "react";
 import BigBlueBox from "../components/BigBlueBox";
@@ -9,17 +10,13 @@ export default function joinus() {
   return (
     <Layout>
       <div>
-        <Typography variant="h2">
-          <b> Join our Team!</b>
-         
-        </Typography>
+        <Typography variant="h2" style={{"marginBottom": "15px"}}> <b> Join our Team!</b></Typography>
         <Typography variant="h6">
           Winter 2022 applications are now open. You will need to complete and
           submit your resume at the form below. If we think you’ll be a good fit
           for the role, we’ll reach out to schedule a quick chat to get to know
           you better
-        </Typography>
-        <Typography variant="h6">
+          <br/> <br/>
           <b>
             Applications close December 7th, 2021, 11:59PM EST. You can expect
             to hear back from us by December 23rd, 2021, 11:59PM EST.
@@ -29,13 +26,21 @@ export default function joinus() {
         </Typography>
         <BigBlueBox title="Important">
           By joining WATonomous, you are agreeing to become a member of the team
-          for the entire Fall Term. All applicants must check out
-          https://bit.ly/wato-roles-divisions-info for detailed descriptions of
-          the Fall 2021 roles before applying. For a list of helpful resources
-          and technical material we are looking for in candidates, see our
-          Resources.
+          for the entire Fall Term. 
+          <br/><br/>
+          All applicants must check out&nbsp;
+          <a href="https://bit.ly/wato-roles-divisions-info">
+            <b>
+            https://bit.ly/wato-roles-divisions-info
+            </b>
+            </a> 
+          &nbsp;for detailed descriptions of the Fall 2021 roles before applying. For a list of helpful resources
+          and technical material we are looking for in candidates, see our&nbsp;
+          <Link to="/resources"><b>Resources.</b></Link>
         </BigBlueBox>
-        <BlueButton>Submit your application!</BlueButton>
+        <div style={{"display": "flex", "justifyContent": "center", "paddingTop": "10px"}}>
+        <BlueButton href="https://forms.gle/Y8sSsF2XEXTkPNhZ8">Submit your application!</BlueButton>
+        </div>
         <Typography variant="h4" style={{"marginTop": "2vw"}}><b>Divisions Open for Recruitment</b></Typography>
         <Typography variant="h4" className={styles.boldBlue}><b>Software Division</b></Typography>
         <Typography variant="h6">

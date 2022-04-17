@@ -1,8 +1,6 @@
 import * as styles from "./ContactInfo.module.scss";
-
 import React from "react";
 import Grid from "@mui/material/Grid";
-
 import SvgIcon from "@mui/material/SvgIcon";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
