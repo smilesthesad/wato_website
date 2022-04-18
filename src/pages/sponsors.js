@@ -7,7 +7,7 @@ import * as styles from "./sponsors.module.scss";
 export default function Sponsors() {
   return (
     <Layout customLayout={true}>
-      <div>
+      <div className={styles.sponsors}>
         <div className={styles.sponsorHeader}>
           <Typography variant="h2">
             <b>
@@ -33,8 +33,7 @@ export default function Sponsors() {
         <Typography variant="h6">
           We are a team of bright individuals with outstanding competition
           results to show for it (list results).
-        </Typography>
-        <Typography variant="h6">
+          <br/>
           We are expanding our horizons, currently in works of publishing
           multiple research reports and Tech Talks.
         </Typography>

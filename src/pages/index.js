@@ -45,14 +45,13 @@ export default function Home() {
                     Our Mission
                     </b>
                 </Typography>
-                <Typography variant="h6" className={styles.textDescription}>
+                <Typography variant="h6" className={styles.textDescription} style={{"marginBottom": "2vw"}}>
                 Adipisicing do et consequat fugiat qui sint dolor sint nostrud
                   do consequat fugiat. Adipisicing sint occaecat tempor laboris
                   amet mollit officia pariatur fugiat et amet qui veniam sunt.
                   Eu quis quis incididunt veniam ad excepteur nisi veniam anim
                   nostrud.
                 </Typography>
-
                 <BlueButton href="/about">Learn More</BlueButton>
               </Grid>
               <Grid item md={6} style={{ textAlign: "center" }}>

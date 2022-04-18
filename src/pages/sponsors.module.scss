@@ -2,15 +2,17 @@
 
 .blueHeading {
   background-color: variables.$lightBlue;
-  padding: 1.5vw 6vw;
+  padding: 1vw 6vw;
 }
 
 .tier {
   padding: 1.5vw 6vw;
 }
 
-.sponsorHeader {
-  padding: 1vh 3vw;
+.sponsors {
+  h2, h6 {
+    padding: 1vh 6vw;
+  }
 }
 
 .centerImage {

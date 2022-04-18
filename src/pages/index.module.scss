@@ -33,19 +33,15 @@
 }
 
 .infoGrid {
-  margin: 0 4em;
-  padding: 2vw 0;
+  padding: 1vh 6vw;
+  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.textDescription {
-  padding: 1rem 1rem 2rem 0;
-}
-
-.infoButtons > * {
-  margin: 1rem;
+.infoButtons > *{
+  margin: 0 1vw;
 }
 
 .watoPictures {
@@ -63,10 +59,7 @@
   padding: 1vw 2vw;
 }
 
-h4 {
-  padding: 10px 0;
-}
-h6 {
+h4, h6 {
   padding: 10px 0;
 }
 
