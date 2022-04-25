@@ -7,15 +7,24 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
 import ResearchProject from "../components/ResearchProject";
 import BackViewofVehicle from "../images/back_view_of_vehicle.jpg";
+import { createTheme } from "@material-ui/core";
+import { ThemeProvider } from "@emotion/react";
+
+const theme = createTheme({
+  typography: {
+    fontSize: 16
+  }
+})
 export default function Home() {
   return (
+    <ThemeProvider theme={theme}>
     <div>
       <Helmet>
         <title>WATonomous</title>
         <meta
           name="keywords"
           content="watonomous, autonomous vehicles, vehicles, autonomy, waterloo, student design team"
-        ></meta>
+          ></meta>
       </Helmet>
       <Layout customLayout={true}>
         <main>
@@ -23,7 +32,7 @@ export default function Home() {
             <StaticImage
               src="../images/back_view_of_vehicle.jpg"
               className={styles.backgroundBolty}
-            />
+              />
             <StaticImage src="../images/WATOLogo.webp" width={1000} />
             <Typography variant="h3" className={styles.description}>
               <b>
@@ -40,7 +49,7 @@ export default function Home() {
               container
               rowSpacing={{ xs: 2, sm: 3, md: 10 }}
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-            >
+              >
               <Grid item md={6}>
                 <Typography variant="h2" className={styles.headerText}>
                   <b>
@@ -61,7 +70,7 @@ export default function Home() {
                   src="../images/side_view_of_vehicle.jpeg"
                   className={styles.sideViewOfBolty}
                   width={600}
-                />
+                  />
               </Grid>
               <Grid item md={6} style={{ textAlign: "center" }}>
                 <Grid container className={styles.watoPictures}>
@@ -70,28 +79,28 @@ export default function Home() {
                       src="../images/WATORACE_LOGO.svg"
                       className={styles.infoGridPic}
                       height={200}
-                    />
+                      />
                   </Grid>
                   <Grid item md={6}>
                     <StaticImage
                       src="../images/iaccar.jpg"
                       className={styles.infoGridPic}
                       width={400}
-                    />
+                      />
                   </Grid>
                   <Grid md={6}>
                     <StaticImage
                       src="../images/mprwlogo.png"
                       className={styles.infoGridPic}
                       height={200}
-                    />
+                      />
                   </Grid>
                   <Grid md={6}>
                     <StaticImage
                       src="../images/mprwcar.jpg"
                       className={styles.infoGridPic}
                       width={400}
-                    />
+                      />
                   </Grid>
                 </Grid>
               </Grid>
@@ -132,39 +141,40 @@ export default function Home() {
               rowSpacing={1}
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
               justifyContent="center"
-            >
+              >
               <Grid md={2.8}>
                 <ResearchProject
                   title="Environment Modeling"
                   text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
                   image={BackViewofVehicle}
-                ></ResearchProject>
+                  ></ResearchProject>
               </Grid>
               <Grid md={2.8}>
                 <ResearchProject
                   title="Environment Modeling"
                   text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
                   image={BackViewofVehicle}
-                ></ResearchProject>
+                  ></ResearchProject>
               </Grid>
               <Grid md={2.8}>
                 <ResearchProject
                   title="Environment Modeling"
                   text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
                   image={BackViewofVehicle}
-                ></ResearchProject>
+                  ></ResearchProject>
               </Grid>
               <Grid md={2.8}>
                 <ResearchProject
                   title="Environment Modeling"
                   text="Lorem ipsum aliqua cupidatat cillum laborum sunt enim labore cupidatat. Est est laboris excepteur aute officia veniam voluptate. Culpa quis sint ex aliquip id non. Elit ut ut sint ullamco eiusmod in fugiat non est enim ex. Incididunt dolor magna laborum anim cupidatat in esse amet id id elit labore commodo. Laboris mollit enim amet excepteur incididunt laboris duis est enim proident ad deserunt magna duis."
                   image={BackViewofVehicle}
-                ></ResearchProject>
+                  ></ResearchProject>
               </Grid>
             </Grid>
           </div>
         </main>
       </Layout>
     </div>
+    </ThemeProvider>
   );
 }
