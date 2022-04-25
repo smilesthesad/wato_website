@@ -2,16 +2,17 @@ import React from "react";
 import Layout from "../components/Layout";
 import BlueButton from "../components/BlueButton";
 import * as styles from "./about.module.scss";
+import { Typography } from "@mui/material";
 export default function About() {
   return (
     <Layout>
       <div className={styles.teamDesc}>
-        <h1>Our Team</h1>
-        <h3>
+        <Typography variant="h4"><b>Our Team</b></Typography>
+        <Typography variant="h5">
           WATonomous is the University of Waterloo's first student-run
           autonomous car team. Our diverse team comprises of students from every
           faculty
-        </h3>
+        </Typography>
         <div className={styles.aboutButtons}>
           <BlueButton>Learn more</BlueButton>
           <BlueButton>Apply now!</BlueButton>

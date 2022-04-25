@@ -5,10 +5,16 @@ import React from "react";
 import BigBlueBox from "../components/BigBlueBox";
 import BlueButton from "../components/BlueButton";
 import Layout from "../components/Layout";
+import HeaderCard from "../components/HeaderCard";
 
+const heading = {
+  quote: "wow I love watonomous",
+  header: "Sample Header",
+  description: "ooga booga Amet eiusmod irure mollit non. Ad consectetur esse cillum proident esse anim. Tempor ex fugiat veniam ipsum dolore esse dolore ad."
+}
 export default function joinus() {
   return (
-    <Layout>
+    <Layout heading={heading}>
       <div>
         <Typography variant="h2" style={{"marginBottom": "15px"}}> <b> Join our Team!</b></Typography>
         <Typography variant="h6">

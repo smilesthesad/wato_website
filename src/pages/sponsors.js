@@ -14,7 +14,7 @@ export default function Sponsors() {
             Sponsors
             </b>
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h5">
           Autonomous vehicles are the future. WATonomous is passionate about
             their work in achieving this vision. As WATonomous grows, it
             requires a significant investment into software and hardware. With
@@ -30,7 +30,7 @@ export default function Sponsors() {
         <div className={styles.centerImage}>
           <StaticImage src="../images/team_with_bolty.png" width={700} />
         </div>
-        <Typography variant="h6">
+        <Typography variant="h5">
           We are a team of bright individuals with outstanding competition
           results to show for it (list results).
           <br/>
@@ -45,7 +45,7 @@ export default function Sponsors() {
             <BlueButton>Complete Sponsor Form</BlueButton>
           </div>
         </div>
-        <Typography variant="h6">
+        <Typography variant="h5">
           For more details, our sponsorship package can be accessed here. For
           any inquirires, feel free to contact us.
         </Typography>
@@ -58,7 +58,7 @@ export default function Sponsors() {
             <b>Our Current Sponsors</b>
           </Typography>
         </div>
-          <Typography variant="h6" style={{ textAlign: "center" }}>
+          <Typography variant="h5" style={{ textAlign: "center" }}>
             A huge thank you to everyone who supports our design team and our
             mission
           </Typography>

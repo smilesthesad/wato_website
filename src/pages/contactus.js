@@ -24,7 +24,7 @@ export default function contactus() {
         </Grid>
 
         <Grid item xs={12}>
-          <Typography variant="h6">
+          <Typography variant="h4">
             Feel free to reach out to us on any of these platforms! You can contact
             us at info@watonomous.ca or simply fill out the form below with your
             message.

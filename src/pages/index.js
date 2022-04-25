@@ -24,10 +24,12 @@ export default function Home() {
               src="../images/back_view_of_vehicle.jpg"
               className={styles.backgroundBolty}
             />
-            <StaticImage src="../images/WATOLogo.webp" width={1200} />
-            <h1 className={styles.description}>
+            <StaticImage src="../images/WATOLogo.webp" width={1000} />
+            <Typography variant="h3" className={styles.description}>
+              <b>
               University of Waterloo's Autonomous Vehicle Design Team
-            </h1>
+              </b>
+            </Typography>
             <div className={styles.infoButtons}>
               <BlueButton href="/about">Learn More</BlueButton>
               <BlueButton href="/">Become a Sponsor</BlueButton>
@@ -45,7 +47,7 @@ export default function Home() {
                     Our Mission
                     </b>
                 </Typography>
-                <Typography variant="h6" className={styles.textDescription} style={{"marginBottom": "2vw"}}>
+                <Typography variant="h4" className={styles.textDescription} style={{"marginBottom": "2vw"}}>
                 Adipisicing do et consequat fugiat qui sint dolor sint nostrud
                   do consequat fugiat. Adipisicing sint occaecat tempor laboris
                   amet mollit officia pariatur fugiat et amet qui veniam sunt.
